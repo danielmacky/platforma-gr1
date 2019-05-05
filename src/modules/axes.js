@@ -27,7 +27,7 @@ export function getGR1(a, b, w, h) {
 let translated = {};
 
 export function getCTX(id) {
-    let canvas = document.getElementById('gr1');
+    let canvas = document.getElementById(id);
     let ctx = canvas.getContext('2d');
     if (!translated[id]) {
         ctx.transform(1, 0, 0, -1, 0, canvas.height);
