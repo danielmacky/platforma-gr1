@@ -1,8 +1,9 @@
 import React from 'react';
 
-function GR2() {
+function GR2(params) {
+
     return (
-        <div>aici e gr2, for real</div>
+        <div className="ghj">aici e gr2, for real -{params.as}-</div>
     );
 }
 
