@@ -24,7 +24,7 @@ function GR2(params) {
         let b = Number(bn);
         let c = Number(cn);
 
-        let delta, x1, y1, x2, y2, delta1, vx, vy, cpx, cpy
+        let delta, x1, y1, x2, y2, delta1, vx, vy, cpx, cpy;
         
         if (a > 0) {
             delta = 4 * b * b - 16 * a * c + 8 * a * h;
@@ -49,12 +49,12 @@ function GR2(params) {
             cpx = vx * 2 - (x1+x2)/2;
             cpy = vy * 2 - (y1+y2)/2;
         }
-        console.log({a, b, c, delta, delta1, x1, y1, x2, y2});
-        console.log({cpx, cpy}, {vx, vy});
+        //console.log({a, b, c, delta, delta1, x1, y1, x2, y2});
+        //console.log({cpx, cpy}, {vx, vy});
 
         ctx.beginPath();
-        ctx.moveTo(x1 * 5, y1);
-        ctx.quadraticCurveTo(cpx, cpy, x2 * 5, y2);
+        ctx.moveTo(x1 * 15, y1);
+        ctx.quadraticCurveTo(cpx, cpy, x2 * 15, y2);
         ctx.stroke();
     });
 
